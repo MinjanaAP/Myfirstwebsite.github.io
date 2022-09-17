@@ -4,15 +4,85 @@
     font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
 }
+@media(max-width:83760px){
+    .hello{
+        font-size:calc(1vw + 2.5rem);
+    }
+
+    nav ul li a{
+        font-size:calc(1vw + .5rem)
+    }
+
+    h1{
+        font-size:calc(1vw + 3rem)
+    }
+
+    h3{
+        font-size:calc(1vw + .5rem)
+    }
+
+    h4{
+        font-size:calc(1vw + .1rem)
+    }
+
+    h5{
+        font-size:calc(1vw + .1rem)
+    }
+
+    .AboutMe h2{
+        font-size:calc(1vw + 3rem)
+    }
+
+    .Abouttext ul li{
+        font-size:calc(1vw + .8rem);
+        
+    }
+
+    .prof h2{
+        font-size:calc(1vw + 3rem);
+        
+    }
+
+    .proftext h3{
+        font-size:calc(1vw + 1.7rem);
+    }
+
+    .proftext p{
+        font-size:calc(1vw + .5rem);
+    }
+
+    .footer h2{
+        font-size:calc(1vw + 2rem);
+    }
+
+    .coninfo h2{
+        font-size: calc(1vw + 1.4rem);
+    }
+
+    .form h2{
+        font-size: calc(1vw + 1.4rem);
+    }
+
+    .text{
+        font-size: calc(1vw + .2rem);
+    }
+
+  
+}
 
 
-.navi{
+.home{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url(back1.jpeg) ;
     background-size: cover;
     background-position: center;
+    
    
+}
+.navi{
+    display: block;
+
 }
 
 nav{
@@ -23,11 +93,13 @@ nav{
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
+    width: 100%;
+    height: auto;
 }
 
 .hello{
     color: white;
-    font-size: 55px;
+   
     letter-spacing: 1px;
     cursor: pointer;
     font-family: "Sofia", sans-serif;
@@ -46,7 +118,7 @@ nav ul li a{
     color: white;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 20px;
+    
 }
 
 nav ul li a:hover{
@@ -77,8 +149,9 @@ nav ul li a:hover{
     
     position: absolute;
     top: 50%;
-    left: 8%;
-    transform: translatey(-50%);
+    left: 10%;
+   
+    
 
 }
 
@@ -89,13 +162,12 @@ span{
 h1{
     color: white;
     margin: 20px 0px 20px;
-    font-size: 75px;
+   
 }
 
 h3{
     color:white;
-    font-size: 250x;
-    transform: translate(60%);
+    transform: translate(20%);
     font-family: 'Comfortaa', cursive;
 
 }
@@ -103,21 +175,23 @@ h3{
 h4{
     color: #e8b9f1bb;
     letter-spacing: 2px;
-    font-size: 20px;
+   
     
 }
 
 h5{
     color:white;
-    font-size: 250x;
-    transform: translate(60%);
+    transform: translate(20%);
     font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .AboutMe{
     width: 100%;
     padding: 60px 0px 100px;
     background-color: #000000;
+    
     
 }
 
@@ -128,11 +202,13 @@ h5{
 
 .AboutMe img{
     height: auto;
-    width: 430px;
+    width: 40%;
 }
 
 .Abouttext{
-    width: 95%;
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
     
     
 }
@@ -151,7 +227,6 @@ h5{
     color: white;
     text-align: center;
     padding-bottom: 3.5rem;
-    font-size: 4rem;
     text-transform: capitalize ;
     font-family: 'Comfortaa', cursive;
     
@@ -164,9 +239,6 @@ h5{
 .Abouttext ul li{
     color: rgba(255, 255, 255, 0.507);
     list-style-type: none;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 30px;
     margin-bottom: 45px;
     text-align: center;
     margin-left: 50px;
@@ -176,14 +248,23 @@ h5{
 
 .prof{
     width: 100%;
+    height: auto;
     padding: 0px 0px 100px;
     background-color: #000000;
 
 }
 
-.prof img{
-    max-height: 100%;
-    max-width: 100%;
+.all{
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: #031418ab;
+    margin: 0;
+    padding: 0;
+}
+
+.prof img{ 
+    width: 100%;
     transition: .4s;
     
     
@@ -195,11 +276,10 @@ h5{
 
 
 .prof2{
-    height: 70vh;
-    width: 100%;
-    padding: 60px ;
-    
-    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    padding: 4% ;
+    margin:  auto;
     display: inline-flex;
     align-items: center;
     background-color: rgba(48, 47, 47, 0.466);
@@ -209,43 +289,35 @@ h5{
     color: white;
     text-align: center;
     padding-bottom: 3.5rem;
-    font-size: 4rem;
     text-transform: capitalize ;
     font-family: 'Comfortaa', cursive;  
 }
 
 
 
-.prof h3{
+.proftext h3{
     color: rgba(255, 255, 255, 0.678);
-    font-size:50px;
     text-transform: capitalize ;
     font-family: 'Comfortaa', cursive;
-    width: 100%;
-    padding: none;
-    margin: 0px;
-    margin-left: -400px;
-
-    
-    
+    margin-right: 90%;
 }
+
+
 .proftext{
     background-color: #1d1c1c8e;
-    height: 70vh;
+    height: auto;
     width: 50%;
-    padding: 80px 0px;
-    margin-left: 60px;
+    padding-bottom: 5%;
+    
 }
 
 .proftext p{
     color: rgba(255, 255, 255, 0.363);
     letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 28px;
-    margin-bottom: 45px;
+    margin-bottom: 5%;
     text-align: left;
-    margin-left: 50px;
-    padding: 60px;   
+    margin-left: 5%;
+    padding: 10%;   
 }
 
 .proftext span{
@@ -255,16 +327,13 @@ h5{
 .icon{
     display: inline;
     margin-left: 20%;
-    
-    
-    
 }
 
 .icon img{
     transition: .4s;
     margin-left: 10%;
     width:8%;
-    height: 12%;
+    height: auto;
 }
 
 .icon img:hover{
@@ -274,7 +343,7 @@ h5{
 
 
 .con{
-    height: 70vh;
+    height: auto;
     width: 100%;
     background-color: #000000;
     display: flex;
@@ -285,16 +354,16 @@ h5{
 .form{
     background-color: rgb(48, 44, 44);
     width: 50%;
-    height: 100%;
-    padding: 60px;
+    height: auto;
+    padding: 4% 6%;
     margin-top: 5%;
 }
 
 .coninfo{
     background-color: rgb(34, 57, 65);
     width: 50%;
-    height: 70vh;
-    padding: 60px;
+    height: auto;
+    padding: 4% 6%;
     margin-top: 5%;
 
 
@@ -303,9 +372,9 @@ h5{
 .footer{
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 15vh;
-    margin-top: 5%;
-    padding-top: 50px;
+    height: auto;
+    padding-top: 6%;
+    padding-bottom: 2%;
     
 }
 
@@ -314,7 +383,6 @@ h5{
     font-family: 'Comfortaa', cursive;
     font-weight: lighter;
     text-align: center;
-    font-size: 50px;
     
     
 }
@@ -330,7 +398,6 @@ h5{
 
 .coninfo h2{
     color: rgb(122, 143, 150);
-    font-size: 50px;
     font-family: "Sofia", sans-serif;
     margin-left: 10%;
     
@@ -376,7 +443,7 @@ h5{
     margin: 0 20px;
     margin-top: 12%;
    width: 9%;
-   height: 9%;
+   height: auto;
    padding: 0px;
    box-shadow: 0 0 20px 0 #7f7f7f3d ;
    transition: .4s;
@@ -389,7 +456,6 @@ h5{
 
 .form h2{
     color: rgb(255, 255, 255);
-    font-size: 50px;
     font-family: 'Comfortaa', cursive;
     margin-left: 10%;
     font-weight: lighter;
@@ -398,19 +464,21 @@ h5{
 }
 
 .form1{
-    margin-top: 1%;
-    margin-left: 10%;
+    display: block;
+    margin-left: 4%;
+    margin-top: 1%; 
     position: absolute;
-    width: 280px;
     transition: .5s;
-    height: 60%;
+    width: 40%;
+    height: auto;
     
 }
 
 .text{
-    width: 100%;
-    padding: 10px ;
-    margin: 20px ;
+    width: 30vw;
+    height: auto;
+    padding: 2% 0 0 4%;
+    margin: 10px 0;
     border-left: 0;
     border-right: 0;
     border-top: 0;
@@ -419,7 +487,6 @@ h5{
     background: transparent;
     font-family: 'Comfortaa', cursive;
     color: rgb(142, 178, 190);
-    font-size: 16px;
     transition: .3s;
 }
 
@@ -429,11 +496,10 @@ h5{
 }
 
 .submit{
-    width: 100%;
+    width: 76%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin-left: 7%;
     margin-top: 8%;
     background: linear-gradient(to right,#000000,rgb(17, 148, 126));
     border: 0;
