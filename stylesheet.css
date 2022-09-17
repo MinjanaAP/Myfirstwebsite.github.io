@@ -44,11 +44,11 @@
     }
 
     .proftext h3{
-        font-size:calc(1vw + 1.7rem);
+        font-size:calc(1vw + 1.1rem);
     }
 
     .proftext p{
-        font-size:calc(1vw + .5rem);
+        font-size:calc(1vw + .4rem);
     }
 
     .footer h2{
@@ -67,6 +67,8 @@
         font-size: calc(1vw + .2rem);
     }
 
+
+
   
 }
 
@@ -74,7 +76,7 @@
 .home{
     height: 100vh;
     width: 100vw;
-    background-image: url(back1.jpeg) ;
+    background-image: url(back2.jpeg) ;
     background-size: cover;
     background-position: center;
     
@@ -98,7 +100,7 @@ nav{
 }
 
 .hello{
-    color: white;
+    color: rgb(255, 255, 255);
    
     letter-spacing: 1px;
     cursor: pointer;
@@ -115,7 +117,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: rgba(255, 255, 255, 0.589);
     text-decoration: none;
     text-transform: capitalize;
     
@@ -208,7 +210,7 @@ h5{
 .Abouttext{
     width: 100%;
     height: auto;
-    padding: 5% 0;
+    padding: 5% 5% 0 0;
     
     
 }
@@ -299,7 +301,7 @@ h5{
     color: rgba(255, 255, 255, 0.678);
     text-transform: capitalize ;
     font-family: 'Comfortaa', cursive;
-    margin-right: 90%;
+    
 }
 
 
@@ -307,7 +309,7 @@ h5{
     background-color: #1d1c1c8e;
     height: auto;
     width: 50%;
-    padding-bottom: 5%;
+    padding: 5% 0;
     
 }
 
@@ -326,13 +328,13 @@ h5{
 
 .icon{
     display: inline;
-    margin-left: 20%;
+    margin: 0 0 0 30% ;
+
 }
 
 .icon img{
     transition: .4s;
-    margin-left: 10%;
-    width:8%;
+    width:12%;
     height: auto;
 }
 
@@ -409,12 +411,14 @@ h5{
     margin-left: 10%;
     font-family: 'Comfortaa', cursive;
     font-weight: lighter;
+    font-size: calc(1vw + .3rem);
 }
 
 .coninfo .p1{
     color: rgba(255, 255, 255, 0.39);
-    margin-left: 30%;
+    margin-left: 22%;
     font-family: 'Comfortaa', cursive;
+    font-size: calc(1vw + .4rem);
 
 }
 
@@ -440,9 +444,9 @@ h5{
 }
 
 .social img{
-    margin: 0 20px;
+    margin: 0 5%;
     margin-top: 12%;
-   width: 9%;
+   width: 12%;
    height: auto;
    padding: 0px;
    box-shadow: 0 0 20px 0 #7f7f7f3d ;
