@@ -108,7 +108,7 @@
     .checkbtn{
       display: block;
     }
-    ul{
+    .navu{
       position: fixed;
       width: 50%;
       height: 100vh;
@@ -132,7 +132,9 @@
     }
     #check:checked ~ ul{
       left: 0;
+      
     }
+   
   }
 .navi{
     display: block;
