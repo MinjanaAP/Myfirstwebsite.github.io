@@ -128,12 +128,13 @@
                 <div class="form">
                     <h2>Let me know what's on your mind.</h2>
                     <form class="form1" id="form1">
+                        <div class="alert">Thanks For Your feedback.. </div> 
                         <input type="text" class="text" id="userId" placeholder="First Name" required>
                         <input type="text" class="text" id="lname" placeholder="Last Name" required>
                         <input type="email" class="text" id="email" placeholder="Your email" required>
                         <input type="number" class="text" id="number" placeholder="Mobile Number" required>
                         <textarea class="text" id="text" placeholder="What's on your mind" required></textarea>
-                        <button type="submit" class="submit" id="submit">Submit</button> 
+                        <button type="submit" class="submit" id="submit" onclick="clear()">Submit</button> 
                     </form>
                 </div>
             </div>
@@ -185,16 +186,31 @@
             let number = document.getElementById("number").value;
             let text = document.getElementById("text").value;
 
+                      // enable atert
+                      document.querySelector(".alert").style.display =  "block";
+
+                    //remove atert
+                    setTimeout(()=>{
+                        document.querySelector(".alert").style.display = "none";
+                    },3000);
+
+                    //reset the form
+                    document.getElementById("form1").reset();
+
             set(ref(db,'users/'+ userId),{
                 lastname : name,
                 Email : email,
                 Number1 : number,
                 feedback : text, 
 
-            });
+            }); 
+
+     
             
 
         });
+
+
 
         
       </script>

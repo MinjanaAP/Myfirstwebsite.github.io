@@ -553,6 +553,18 @@ h5{
 
 }
 
+.alert{
+    width: 80%;
+    background: linear-gradient(to right,#0000,rgb(10, 119, 10),rgb(47, 192, 170));
+    padding: 10px 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+    
+}
+
 .submit{
     width: 76%;
     padding: 10px 30px;
